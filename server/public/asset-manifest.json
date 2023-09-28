@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d73400e5.css",
+    "main.js": "/static/js/main.bc45da40.js",
+    "static/media/pickRightSuit.jpg": "/static/media/pickRightSuit.a4f84b983eb93c7fba90.jpg",
+    "static/media/womenProductScent.jpg": "/static/media/womenProductScent.f9bcf8fbe52d0ff3d33a.jpg",
+    "static/media/conf.jpg": "/static/media/conf.cabb95c025b77d222214.jpg",
+    "static/media/picksuit.jpg": "/static/media/picksuit.49ed91b1ebda3a089a23.jpg",
+    "static/media/businessmanWhiskey.jpg": "/static/media/businessmanWhiskey.5cf6106b229a970e820c.jpg",
+    "static/media/womenShoeCarousel.jpg": "/static/media/womenShoeCarousel.a23cba5b5ebacbb39806.jpg",
+    "static/media/menSuitCarousel.jpg": "/static/media/menSuitCarousel.1bc1de655ba84769245a.jpg",
+    "static/media/womenFinalShop.jpg": "/static/media/womenFinalShop.459ed368d00435efb4fe.jpg",
+    "static/media/chooseTailor.jpg": "/static/media/chooseTailor.2527689c285a4656535b.jpg",
+    "static/media/finalShopMen.jpg": "/static/media/finalShopMen.035cd46ab46572ddc589.jpg",
+    "static/media/menProduct.png": "/static/media/menProduct.e93c68f5ad703786436c.png",
+    "static/media/pickRightScent.jpg": "/static/media/pickRightScent.5a5ea87c401a47a38241.jpg",
+    "static/media/welcomePage.jpg": "/static/media/welcomePage.57d525ffd812ba611b36.jpg",
+    "static/media/menShoesCarousel.jpeg": "/static/media/menShoesCarousel.cf91abdd74c602cd5b82.jpeg",
+    "static/media/womenSuitCarousel.jpg": "/static/media/womenSuitCarousel.b6432878946368fc94b8.jpg",
+    "static/media/chooseScent.png": "/static/media/chooseScent.6d3772c786b52b1699e5.png",
+    "static/media/harvey.jpg": "/static/media/harvey.f66cf17188cdb911b52d.jpg",
+    "static/media/pickRightTailor.webp": "/static/media/pickRightTailor.a4e087f96318d9c6c9cc.webp",
+    "static/media/bus.jpg": "/static/media/bus.cb5fc0884840023d0606.jpg",
+    "static/media/harvey.jpeg": "/static/media/harvey.7ab52b93b7c7b9bc988e.jpeg",
+    "index.html": "/index.html",
+    "main.d73400e5.css.map": "/static/css/main.d73400e5.css.map",
+    "main.bc45da40.js.map": "/static/js/main.bc45da40.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d73400e5.css",
+    "static/js/main.bc45da40.js"
+  ]
+}
