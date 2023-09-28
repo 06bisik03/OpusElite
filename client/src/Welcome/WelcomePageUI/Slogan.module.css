@@ -1,0 +1,69 @@
+.sloganContainer {
+  width: 100%;
+height: 100%;
+
+  background-image: url("/public/images/welcomePage.jpg");
+  background-size: cover;
+  display: flex;
+  color: white;
+
+}
+
+.slogan {
+  width: 45%;
+  height: 40%;
+  background-color: rgba(255, 255, 255, 0.358);
+  align-self: center;
+  margin-left: 65px;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-100%); /* Start off-screen */
+  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+  opacity: 0;
+}
+.ad {
+  width: 65%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 14% 72% 14%;
+}
+.ad div:nth-child(1) {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  align-self: flex-end;
+}
+.ad div:nth-child(2) {
+  font-size: 34px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  line-height: 47px;
+}
+.ad div:nth-child(3) a {
+  color: rgb(255, 129, 39);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+.ad div:nth-child(3) i {
+  color: rgb(255, 129, 39);
+  font-weight: 600;
+  font-size: 13px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+}
+
+.ad div:nth-child(3):hover i {
+  transform: translateX(15px);
+}
+.slideIn {
+    transform: translateY(0); /* Slide in from the right */
+    opacity: 1; /* Fully visible at the end of the slide */
+}
+
+.visible {
+    transform: translateY(0); /* Slide down from above */
+}

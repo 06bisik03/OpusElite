@@ -1,0 +1,92 @@
+.introductionContainer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(228, 228, 228);
+  display: grid;
+  grid-template-columns: 50% 50%;
+    
+
+}
+.founder {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  overflow: hidden;
+}
+.text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.img {
+  margin-right: 20px;
+  width: 70%;
+  height: 90%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("/public/images/harvey.jpeg");
+}
+.introductionText{
+    height: 50%;
+    width:70%;
+    align-self: center;
+    padding-left: 20px;
+    display: grid;
+    grid-template-rows: 15% 25% 45% 15% ;
+}
+.op1 {
+    width:100%;
+    height: 100%;
+
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+.op2 {
+    width:100%;
+    height: 100%;
+
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    line-height: 26px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    
+}
+.op3 {
+    width:100%;
+    height: 100%;
+    font-size: 18px;
+    display: flex;
+
+    line-height: 30px;
+  
+}
+.op4 {
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.op4 a {
+    color: rgb(255, 129, 39);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .op4 i {
+    color: rgb(255, 129, 39);
+    font-weight: 600;
+
+    margin-left: 10px;
+    font-size: 15px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+  }
+  
+  .op4:hover i {
+    transform: translateX(15px);
+  }

@@ -1,0 +1,172 @@
+.sizeContainer {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.409);
+  display: grid;
+  z-index: 999;
+  position: fixed;
+}
+.sizes {
+  width: 30%;
+  height: 60%;
+  background-color: rgb(255, 255, 255);
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template-rows: 7% 93%;
+}
+.sizes > div:nth-child(1) {
+  width: 5%;
+  height: 100%;
+  display: grid;
+  justify-self: right;
+  position: relative;
+  margin-right: 3px;
+}
+.btnClose {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: #000000;
+  border-radius: 50%;
+  margin-top: 5px;
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 150ms;
+}
+.btnClose .iconCross {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.btnClose .iconCross:before,
+.btnClose .iconCross:after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0.5px;
+  right: 0px;
+  height: 6px;
+  background: #fff;
+  border-radius: 6px;
+}
+.btnClose .iconCross:before {
+  transform: rotate(45deg);
+}
+.btnClose .iconCross:after {
+  transform: rotate(-45deg);
+}
+.btnClose .iconCross span {
+  display: block;
+}
+.btnClose:hover,
+.btnClose:focus {
+  transform: rotateZ(90deg);
+  background: #ff9a47;
+}
+.visuallyHidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.sizes > div:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 20% 40% 40%;
+
+}
+.sizes > div:nth-child(2) > div:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  font-size: 26px;
+
+  grid-template-rows: 40% 60%;
+  justify-items: center;
+  align-items: center;
+}
+.buttons {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.buttons button {
+  width: 30%;
+  height: 80%;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px rgb(0, 0, 0);
+  font-size: 19px;
+  transition: ease-in 0.2s;
+}
+
+.buttons button:hover {
+  transform: scale(1.1);
+}
+.sizes > div:nth-child(2) > div:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 40% 20% 40%;
+  justify-items: center;
+}
+.sizes > div:nth-child(2) > div:nth-child(2) input {
+  width: 70%;
+  height: 65%;
+  align-self: center;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.sizes > div:nth-child(2) > div:nth-child(2) i {
+  font-size: 25px;
+  align-self: center;
+}
+
+.sizes > div:nth-child(2) > div:nth-child(2) input:focus {
+  outline: none;
+}
+.sizesOpus {
+    width:100%;
+    height:100%;
+
+
+}
+.sizesTable {
+    width: 90%;
+    height: 100%;
+    table-layout: fixed;
+    text-align: left;
+    font-size: 11.5px;
+
+  }
+  
+  .centerAlignWithGap {
+    text-align: left;
+    width: 20%; /* Adjust the width percentage to create the gap */
+  }
+  
+  
+  .centerAlign {
+    width:20%;
+    text-align: center;
+  }

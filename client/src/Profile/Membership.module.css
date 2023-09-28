@@ -1,0 +1,283 @@
+.membershipContainer {
+  width: 100%;
+  height: 100%;
+    box-sizing: border-box;
+  display: grid;
+}
+.membership {
+  width: 95%;
+  height: 95%;
+  justify-self: center;
+  align-self: center;
+
+  display: grid;
+  grid-template-rows: 10% 90%;
+}
+.membership > div:nth-child(1) {
+  width: 100%;
+  font-size: 24px;
+  text-indent: 15px;
+  height: 100%;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+}
+.plansContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 25% 75%;
+}
+
+.plansContainer > div:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:15px;
+  text-align: center;
+}
+.plansContainer > div:nth-child(1) > div:nth-child(1) {
+  font-size: 26px;
+  display: grid;
+  justify-content: center;
+}
+
+.plansContainer > div:nth-child(1) > div:nth-child(2) {
+  font-size: 20px;
+  display: grid;
+  justify-content: center;
+}
+
+.plans {
+  width: 100%;
+  height: 100%;
+
+  align-self: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+.secondary1 {
+  align-self: center;
+  width: 90%;
+  height: 95%;
+  display: grid;
+
+  justify-self: left;
+
+  word-wrap: break-word;
+  grid-template-rows: 15% 65% 20%;
+  overflow: hidden;
+}
+.secondary2 {
+  align-self: center;
+  width: 90%;
+  height: 95%;
+  display: grid;
+
+  justify-self: left;
+
+  word-wrap: break-word;
+  grid-template-rows: 15% 65% 20%;
+  overflow: hidden;
+}
+.primary {
+    align-self: center;
+    width: 90%;
+    height: 95%;
+    display: grid;
+
+    justify-self: left;
+
+    word-wrap: break-word;
+    grid-template-rows: 15% 65% 20%;
+    overflow: hidden;
+}
+.secondary1 > div:nth-child(1) {
+  font-size: 22px;
+  display: grid;
+  background-color: rgb(255, 239, 181);
+  justify-content: center;
+  align-items: center;
+}
+.secondary1 > div:nth-child(2) {
+  font-size: 16px;
+}
+.secondary1 > div:nth-child(2) ul {
+  width: 80%;
+  height: 90%;
+}
+.secondary1 > div:nth-child(2) li {
+  margin-bottom: 15px;
+}
+.secondary1 > div:nth-child(3) {
+  width: 100%;
+  height: 100%;
+  
+  display: grid;
+}
+.plansContainer button {
+  width: 70%;
+  height: 60%;
+  justify-self: center;
+  align-self: center;
+  border: solid 1px black;
+}
+.plansContainer button {
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+}
+
+.plansContainer button::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #ffef9d 0%, orange 100%);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.plansContainer button:hover::before {
+  width: 100%;
+}
+
+.secondary2 > div:nth-child(1) {
+  font-size: 22px;
+  background-color: rgb(255, 239, 181);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.secondary2 > div:nth-child(2) {
+  font-size: 16px;
+}
+.secondary2 > div:nth-child(2) ul {
+  width: 80%;
+  height: 90%;
+}
+.secondary2 > div:nth-child(2) li {
+  margin-bottom: 15px;
+}
+.secondary2 > div:nth-child(3) {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+
+.primary > div:nth-child(1) {
+    font-size: 21px;
+    display: grid;
+  background-color: rgb(255, 239, 181);
+
+    justify-content: center;
+    align-items: center;
+  }
+  .primary > div:nth-child(1) > div:nth-child(2) {
+    width: max-content;
+    justify-self: center;
+  }
+  .secondary1 > div:nth-child(1) > div:nth-child(2) {
+    width: max-content;
+    justify-self: center;
+  }
+  .secondary2 > div:nth-child(1) > div:nth-child(2) {
+    width: max-content;
+    justify-self: center;
+  }
+  .primary > div:nth-child(2) {
+    font-size: 16px;
+  }
+  .primary > div:nth-child(2) ul {
+    width: 80%;
+    height: 90%;
+  }
+  .primary > div:nth-child(2) li {
+    margin-bottom: 15px;
+  }
+  .primary > div:nth-child(3) {
+    width: 100%;
+    height: 100%;
+    display: grid;
+  }
+  
+  .box {
+
+transform: scale(1.05);
+	border: 0.3rem solid;
+
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+
+
+@keyframes borderRotate {
+	100% {
+		--angle: 450deg;
+	}
+}
+
+:root {
+	--d:6000ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgb(255, 162, 0);
+	--c2: rgba(255, 242, 147, 0.115);
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+  }
+  
+  @property --gradX {
+    syntax: '<percentage>';
+    initial-value: 50%;
+    inherits: true;
+  }
+  
+  @property --gradY {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: true;
+  }
+  
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}

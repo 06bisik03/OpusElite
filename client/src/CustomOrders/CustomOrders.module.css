@@ -1,0 +1,100 @@
+.customOrderContainer {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: 100% 75%;
+}
+.intro {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  
+}
+.customOrder {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("https://img.freepik.com/premium-photo/mannequin-clothing-store-with-shirt-tie_250469-18286.jpg?w=996");
+  background-size: cover;
+  align-items: center;
+  background-position-y: -95px;
+  background-repeat: no-repeat;
+  transform: translateX(-100%); /* Start off-screen */
+  transition: transform 2s ease-in-out, opacity 3s ease-in-out;
+  opacity: 0;
+}
+.details {
+  width: 50%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.358);
+  color: white;
+  margin-right: 45px;
+  display: grid;
+  transform: translateY(-100%); /* Start off-screen */
+  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+  opacity: 0;
+}
+.ad {
+  width: 60%;
+  height: 100%;
+  justify-self: center;
+  display: grid;
+  letter-spacing: 2px;
+  grid-template-rows: 14% 72% 14%;
+}
+
+.details div:nth-child(1) {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  align-self: flex-end;
+}
+.details div:nth-child(2) {
+  font-size: 37px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  line-height: 47px;
+}
+
+.details div:nth-child(3) button {
+  color: rgb(255, 129, 39);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+.details div:nth-child(3) i {
+  color: rgb(255, 129, 39);
+  font-weight: 600;
+  font-size: 13px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+}
+
+.details div:nth-child(3):hover i {
+  transform: translateX(15px);
+}
+.slideIn {
+  transform: translateY(0); /* Slide in from the right */
+  opacity: 1; /* Fully visible at the end of the slide */
+}
+
+.visible {
+  transform: translateY(0); /* Slide down from above */
+}
+.slideDown {
+  transform: translateY(0); /* Slide in from the right */
+  opacity: 1; /* Fully visible at the end of the slide */
+}
+
+.visibleAd {
+  transform: translateY(0); /* Slide down from above */
+}

@@ -1,0 +1,66 @@
+.praiseContainer {
+    width: 100%;
+    height:100%;
+    
+    background-image: url('/public/images/businessmanWhiskey.jpg');
+
+    background-size: cover;
+}
+.praiseWords {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    color:white;
+    align-items: center;
+
+}
+.textBox { 
+    width:45%;
+    height:50%;
+    margin-left: 105px;
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.244);
+
+    grid-template-rows: 15% 70% 15%;
+
+}
+.title { 
+    width:70%;
+    height:100%;
+    font-size: 20px;
+    display: grid;
+    align-items: flex-end;
+    justify-self: center;
+}
+.text { 
+    width:70%;
+    height:100%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.more {
+    width:70%;
+    height:100%;
+    justify-self: center;
+    align-items: center;
+}
+.more a {
+    color: rgb(255, 129, 39);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .more i {
+    color: rgb(255, 129, 39);
+    font-weight: 600;
+
+    margin-left: 10px;
+    font-size: 15px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+  }
+  
+  .more:hover i {
+    transform: translateX(15px);
+  }

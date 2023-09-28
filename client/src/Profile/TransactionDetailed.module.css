@@ -1,0 +1,122 @@
+.transactionDetailedContainer {
+    width:100%;
+    height:100%;
+    min-height: 100vh;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+
+}
+.transactionDetailed {
+    width:45%;
+    height:65%;
+
+    display: grid;
+    grid-template-rows: 15% 75% 10%;
+}
+.transactionDetailed > div:nth-child(1) {
+    background-color: orange;
+    width:100%;
+    height:100%;
+    font-size: 35px;
+    letter-spacing: 2px;
+    display: grid;
+    align-items: center;
+
+}
+
+.controls {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .controls > div:nth-child(1) {
+    font-size: 21px;
+    letter-spacing: 1px;
+  }
+  .controls a {
+    width: 27%;
+    letter-spacing: 1.2px;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: black;
+    color: white;
+    border: solid 1px rgb(47, 47, 47);
+    transition: ease-in 0.25s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .controls a:hover {
+    background-color: rgb(126, 126, 126);
+  }
+  
+  .table {
+    width: 100%;
+  height: 100%;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    
+  
+  }
+  .headers {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 65% 20% 15%;
+
+
+    font-size: 17px;
+    align-items: center;
+  }
+  .titleContainer {
+    width: 100%;
+  height: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .headers > div:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+  .headers > div:nth-child(2), .headers > div:nth-child(3) {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .productList {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    position:relative;
+    
+  
+  
+  }
+  .productsC {
+    width:100%;
+    height: 100%;
+    position:absolute;
+    overflow: scroll; 
+
+  }
+  .headers > div:nth-child(1) {
+    justify-content: center;
+  }
